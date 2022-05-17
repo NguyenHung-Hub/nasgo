@@ -1,0 +1,25 @@
+.linktopage {
+  width: 1200px;
+  height: 50px;
+  background-color: rgb(254, 255, 248);
+  box-sizing: border-box;
+  color: #824d5c;
+  font-weight: 800;
+
+  padding: 15px 10px;
+}
+
+.linktopage > a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #b67f8f;
+  padding: 0 5px;
+}
+
+/* hình ảnh, giá cả, sl */
+#container {
+  width: 1200px;
+  height: 600px;
+  box-sizing: border-box;
+}

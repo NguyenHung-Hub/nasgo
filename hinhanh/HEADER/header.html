@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chỗ này ai làm trang ghi thì ghi tên trang đó vô nha - Ví dụ: Trang chủ, Liên hệ, v.v... -->
+    <title>Header</title>
+    <!-- css -->
+    <link rel="stylesheet" href="header.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity=""
+    />
+  </head>
+
+  <body>
+    <div id="banner">
+      <!-- Banner t sẽ set cố định là width 120px height 1200px. 
+            Hình banner bạn nào bị to hơn thì đổi kích thước là được, 
+            không đụng vô những phần khác nha
+         -->
+
+      <div id="header">
+        <!-- LOGO -->
+        <div id="logo">
+          <img src="img/logo.png" alt="Logo Nasgo Decor" />
+        </div>
+
+        <!-- MAIN MENU -->
+        <div id="menu">
+          <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">CỬA HÀNG</a></li>
+            <li><a href="#">CHIA SẺ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+
+        <!-- TÌM KIẾM, GIỎ HÀNG, ĐĂNG NHẬP -->
+        <div id="icon">
+          <!-- search -->
+          <div id="search">
+            <input type="text" name="" id="txtsearch" placeholder="Tìm kiếm" />
+            <button type="button" id="btsearch">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Giỏ hàng -->
+          <div id="cart">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+
+          <!-- Đăng nhập -->
+          <div id="login">
+            <a href="#">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

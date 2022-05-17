@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity=""
+    />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="./prod_detail.css" />
+    <!-- <link rel="stylesheet" href="../hinhanh/HEADER/header.css" /> -->
+    <link rel="stylesheet" href="./sp_trending.css" />
+    <!-- <link rel="stylesheet" href="../introduce/introduce.css" /> -->
+
+    <!-- bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="full">
+      <!-- header -->
+      <div id="header">
+        <!-- LOGO -->
+        <div id="logo">
+          <img src="../hinhanh/logo.png" alt="Logo Nasgo Decor" />
+        </div>
+
+        <!-- MAIN MENU -->
+        <div id="menu">
+          <ul>
+            <li><a href="../home.html">TRANG CHỦ</a></li>
+            <li><a href="#">CỬA HÀNG</a></li>
+            <li><a href="#">CHIA SẺ</a></li>
+            <li><a href="introduce/introduce.html">GIỚI THIỆU</a></li>
+            <li><a href="Contact/contact.html">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+
+        <!-- TÌM KIẾM, GIỎ HÀNG, ĐĂNG NHẬP -->
+        <div id="icon">
+          <!-- search -->
+          <div id="search">
+            <input
+              type="text"
+              name=""
+              style="width: 179px; height: 32px"
+              id="txtsearch"
+              placeholder="Tìm kiếm"
+            />
+
+            <button
+              type="button"
+              id="btsearch"
+              style="
+                height: 30px;
+                width: 30px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+              "
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Giỏ hàng -->
+          <div id="cart">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+
+          <!-- Đăng nhập -->
+          <div id="login">
+            <a href="login/login.html">
+              <i class="fas fa-user"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div id="banner">
+        <!-- <img src="hinhanh/banner.png" alt ="banner"> -->
+        <!-- <p style="background-image: url('banner.png');"></p> -->
+      </div>
+
+      <!-- link to back page -->
+      <div id="prod_detail">
+        <div class="linktopage">
+          <a href="Trang chủ">Trang chủ </a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="Shop">Cửa hàng</a>
+          <i class="fas fa-chevron-right"></i>
+          <!-- <a href="Danh mục">Gấu bông </a>
+          <i class="fas fa-chevron-right"></i> -->
+          <a href="SP" id="tittle_prod_name"
+            >GẤU BÔNG - BÒ CHĂM CHỈ 70CM siêu đẹp
+          </a>
+        </div>
+
+        <!-- image & price -->
+        <div id="container">
+          <!-- Hình ảnh sản phẩm -->
+          <div class="img_prod">
+            <img
+              src="	https://cf.shopee.vn/file/d99dcee3907f9c9a2e01bea10da2d7f3"
+              alt="Bò chăm chỉ"
+              class="main_img_prod"
+              id="main_img_prod"
+            />
+          </div>
+
+          <!-- Thông tin: giá cả, sl, đặt mua -->
+          <div id="infor_prod">
+            <!-- Tên sp -->
+            <div class="name_prod" id="name_prod">
+              GẤU BÔNG - BÒ CHĂM CHỈ 70CM siêu đẹp
+            </div>
+            <input type="hidden" name="" id="id_prod_detail" />
+
+            <!-- Giá sp -->
+            <div class="price_prod" id="price_prod">360.000</div>
+
+            <!-- Vận chuyển -->
+            <div id="shipping">
+              <label for="ship" class="label_prod">Vận chuyển</label>
+              <div id="fs">
+                <div id="tittle_fs">
+                  <img
+                    src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/pdp/1cdd37339544d858f4d0ade5723cd477.png"
+                    alt="Icon Free Ship"
+                  />
+                  <p>Miễn phí vận chuyển</p>
+                </div>
+
+                <!-- Thông tin miễn phí vận chuyển -->
+                <div id="pricetofs">
+                  <p>Miễn phí vận chuyển cho đơn hàng từ 300.000₫</p>
+
+                  <p>Đơn hàng dưới 300.000₫, phí vận chuyển đồng giá 30.000₫</p>
+                </div>
+              </div>
+              <p></p>
+            </div>
+
+            <!-- Số lượng -->
+            <div class="quantity">
+              <label for="quantity" class="label_prod">Số lượng</label>
+              <!-- <input type="te" name="quantity" aria-valuenow="1" /> -->
+
+              <div id="btsl">
+                <input
+                  type="button"
+                  name=""
+                  class="sizebtsl"
+                  id="sub"
+                  value="-"
+                />
+                <input
+                  type="text"
+                  name="quantity"
+                  value="1"
+                  min="1"
+                  id="quantity_selector"
+                />
+
+                <input
+                  type="button"
+                  name=""
+                  id="plus"
+                  class="sizebtsl"
+                  value="+"
+                />
+
+                <div>
+                  <input type="text" name="" id="tbsl_tonkho" value="20" />
+                  Sản phẩm có sẵn
+                </div>
+              </div>
+
+              <!-- thông báo tồn kho -->
+              <div id="tbtonkho"></div>
+            </div>
+
+            <!-- Nút các kiểu -->
+            <div id="prod_bt">
+              <!-- Thêm vào giỏ hàng -->
+              <div class="addtocart">
+                <button id="addcart" class="clss_btn">
+                  <i class="fas fa-cart-plus"></i>
+                  <span>Thêm vào giỏ hàng</span>
+                </button>
+              </div>
+
+              <!-- Mua ngay -->
+              <div class="buynow">
+                <input
+                  type="button"
+                  name="buynow"
+                  id="buynow"
+                  class="clss_btn"
+                  value="Mua ngay"
+                />
+              </div>
+            </div>
+
+            <!-- ưu đãi -->
+            <div id="infor_coupon">
+              <p style="line-height: 35px">
+                <b style="font-size: 18px"
+                  >Ưu đãi dành riêng cho khách hàng đặt tại Website
+                </b>
+                <br />
+                1. Hỗ trợ tư vấn miễn phí 24/7
+
+                <br />
+                2. Giao hàng miễn phí với đơn hàng từ 300.000
+
+                <br />
+                3. Hỗ trợ đổi trả trong tuần đầu tiên nếu không hài lòng
+
+                <br />
+                4. Hỗ trợ hoàn tiền trong vòng 48h
+
+                <br />
+                5. Tích điểm nhận quà từ Nasgo Decor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- mô tả sản phẩm -->
+        <div class="description">
+          <div class="title_proc_detail">MÔ TẢ SẢN PHẨM</div>
+          <div id="mota">
+            <p>GẤU BÔNG - BÒ CHĂM CHỈ 70CM siêu đẹp</p>
+            <p>
+              🔔🔔Thông tin chung:<br />- Kích thước: Dài 55cm – Rộng 35cm – Cao
+              70cm<br />- Khối lượng: 2500gram<br />- Chất liệu: vải nỉ nhung,
+              Bông gòn PP 3D tinh khiết, đàn hồi đa chiều<br />- Xuất xứ : Việt
+              Nam<br />- Thương Hiệu: Miniso
+            </p>
+            <p>
+              🔔🔔 Mô tả sản phẩm<br />📎 Chắc hẳn là fan phim Hàn thì không ai
+              không biết đến chú bò bông xuất hiện trong tập 3 của bộ phim Hàn
+              đình đám – “Thư ký Kim sao thế?”. Đây là món quà đặc biệt của Phó
+              chủ tích Lee Young Joo tặng cô thư ký Kim Mi So. Kèm theo là lời
+              nhắn đầy bá đạo:&amp;nbsp;“Vì cô đã làm việc chăm chỉ như một con
+              bò, nên tôi tặng cô con bò bông này, tên nó là “bò chăm
+              chỉ”.&nbsp;
+            </p>
+            <p>
+              📎 Chất liệu ngoài: Vải MINISO mềm mịn, không rụng lông và an
+              toàn, tạo cảm giác thoải mái khi ôm
+            </p>
+            <p>
+              📎Bò chăm chỉ được làm bằng vải nhung mềm mại, nhồi 100% gòn bông
+              đàn hồi. Đường kim mũi chỉ tinh tế, đẹp mắt. – Đây chắc chắn sẽ là
+              món quà động viên, khích lệ đáng yêu, ý nghĩa. Điều đặc biệt nữa
+              nha. Nếu có chàng trai nào băn khoăn quà tặng bạn gái, bò chăm chỉ
+              sẽ là sự lựa chọn tuyệt vời. Các nàng sẽ thích ôm không rời tay
+              cho xem! &amp;nbsp;
+            </p>
+            <p>
+              📎 Giặt rửa nhanh khô, đặc biệt không bị xổ lông nên sẽ không gây
+              ảnh hưởng đến đường hô hấp của trẻ nhỏ. - Cam kết sản phẩm y hình
+            </p>
+            <p>
+              Hàng trước khi gửi đều được hút chân không và đóng gói cẩn thận,
+              giúp giảm bớt chi phí vận chuyển cho khách hàng. Gấu bông không bị
+              biến dạng trong quá trình hút chân không. Sau khi mở sản phẩm
+              Khách vui lòng đợi 5- 10 ph để gấu tự bung và trở lại hình dáng
+              ban đầu &nbsp;
+            </p>
+            <p>
+              🔔🔔 Cách bảo quản:<br />1. Đặt &nbsp;thú bông &nbsp;ở nơi thoáng
+              mát, tránh ẩm ướt vì sản phẩm có độ hút ẩm rất cao<br />2. Giặt
+              &nbsp;thú bông &nbsp;thường xuyên, tránh để quá lâu (2-3 tháng
+              giặt 1 lần)<br />3. Nên giặt bằng các loại xà phòng chuyên dùng
+              giặt quần áo trẻ em để có thể bảo quản độ mịn của gối mền<br />4.
+              Không nên giặt bằng máy với các loại &nbsp;thú bông . Đối với loại
+              &nbsp;thú bông &nbsp;chất liệu lông nhung có thể giặt bằng máy
+              nhưng nên hạn chế<br />5. Phơi thú bông dưới nắng to và đợi sản
+              phẩm khô hẳn mới mang vào nhà
+            </p>
+          </div>
+        </div>
+
+        <!-- Sản phẩm tương tự -->
+        <div class="prod_trending_container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 id="prod_trending"><b>SẢN PHẨM </b><b>TƯƠNG TỰ</b></h2>
+              <div
+                id="myCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+                data-interval="0"
+              >
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#myCarousel"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner" id="carousel-inner">
+                  <div class="item active">
+                    <div class="row" id="item_1">
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Apple iPad</h4>
+                            <p class="item-price">
+                              <span>$369.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Sony Headphone</h4>
+                            <p class="item-price">
+                              <span>$23.99</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#.jpg" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Macbook Air</h4>
+                            <p class="item-price">
+                              <span>$649.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Nikon DSLR</h4>
+                            <p class="item-price">
+                              <span>$250.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#.jpg" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Sony Play Station</h4>
+                            <p class="item-price">
+                              <span>$269.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#.jpg" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Macbook Pro</h4>
+                            <p class="item-price">
+                              <span>$869.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Bose Speaker</h4>
+                            <p class="item-price">
+                              <span>$99.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Samsung Galaxy S8</h4>
+                            <p class="item-price">
+                              <span>$569.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <p class="title_pro_slider">,vnbmvb</p>
+                            <p class="item-price">
+                              <span>$349.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Canon DSLR</h4>
+                            <p class="item-price">
+                              <span>$250.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Google Pixel</h4>
+                            <p class="item-price">
+                              <span>$418.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="#" class="img-responsive" alt="" />
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Apple Watch</h4>
+                            <p class="item-price">
+                              <span>$330.00</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel controls -->
+                <a
+                  class="carousel-control left"
+                  href="#myCarousel"
+                  data-slide="prev"
+                  style="background-color: white; background-image: none"
+                >
+                  <i class="fa fa-angle-left"></i>
+                </a>
+                <a
+                  class="carousel-control right"
+                  href="#myCarousel"
+                  data-slide="next"
+                  style="background-color: white; background-image: none"
+                >
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="prod_detail.js" type="module"></script>
+    <script src="../Data/data.js" type="module"></script>
+    <script src="../Data/data_prod.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#thu {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  /* background-color: aqua; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BẢNG MÀU
+  - VÀNG:#e2e0a3
+  - XANH LÁ: #a0bc8b
+  - ĐỎ: #824d5c <Đỏ bảng thư đưa nó bị đậm quá nên t xuống 1-2 tone
+  - XANH NƯỚC: #68898c
+  - ĐEN: BLACK*/
+
+#banner {
+  width: 1200px;
+  height: 350px;
+  margin: auto;
+  background: url(img/hệ.png);
+  /* background-color: url(img/logo.png); */
+  /* Bỏ cả cái dòng border đi nhe 
+    Dòng border là để tụi m biết cái banner nó nằm chỗ nào*/
+  /* đổi tên hình vô nhe */
+}
+
+#header {
+  width: 1200px;
+  height: 100px;
+  /* background-color: rgba(245, 243, 176, 0.655); */
+  /* Cài này là màu nền của header
+    thích đổi màu thì đổi 3 số đầu nha
+    245, 243, 176
+    số cuối phẩy phẩy là % transper á, độ mờ t đang set là 65,5% */
+}
+
+#logo {
+  width: 120px;
+  height: 100%;
+  float: left;
+
+  position: relative;
+}
+
+#logo > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu {
+  width: 630px;
+  height: 100%;
+  float: left;
+
+  font-size: 18px;
+  font-weight: 750;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#menu > ul {
+  padding: 35px 10px;
+  text-align: center;
+}
+
+#menu > ul > li {
+  display: inline;
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: white;
+}
+
+#menu > ul > li > a:hover {
+  color: rgb(255, 130, 130);
+}
+#icon {
+  width: calc(1200px - 120px - 630px);
+  height: 100%;
+  float: left;
+  align-items: center;
+}
+#full {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 112px;
+}
+
+#search {
+  float: left;
+  padding: 32px 0;
+}
+
+#txtsearch {
+  border-radius: 50px;
+  border: rgb(222, 213, 213) 3px solid;
+  padding-right: 5px;
+  padding: 5px;
+}
+
+#btsearch {
+  padding: 5px;
+  border-radius: 20px;
+  border: rgb(222, 213, 213) 3px solid;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+#cart {
+  float: left;
+  padding: 40px 10px;
+  /* margin: 5px; */
+}
+
+#cart > a > i {
+  color: #824d5c;
+}
+
+#login {
+  float: left;
+  padding: 40px 10px;
+}
+
+#login > a > i {
+  color: #824d5c;
+}
+
+#cam {
+  width: 100%;
+  height: 240px;
+}
+
+#title {
+  width: 60%;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  /* padding: 15px 0px 15px; */
+  padding: 50px 0 10px 50px;
+  letter-spacing: 1;
+  color: #a1be95;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#content {
+  width: 92%;
+  height: 190px;
+  text-align: justify;
+  /* padding: 30px 0px 15px; */
+  padding: 15px 0 10px 50px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#map {
+  width: 100%;
+  height: 590px;
+  margin-top: 30px;
+  /* padding-left: 35px; */
+  /* padding: 35px 35px; */
+}
+
+#map > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#us {
+  width: 100%;
+  height: 643px;
+  /* padding-top: 50px; */
+  box-sizing: border-box;
+  /* background-color: #a1be95; */
+}
+
+#hinhanh,
+#noidung {
+  position: absolute;
+}
+
+#noidung {
+  z-index: 1;
+  top: 170px;
+  left: 125px;
+  background-color: white;
+  float: left;
+  width: 37%;
+  height: 250px;
+  /* margin-top: 60px; */
+  padding: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.22);
+  /* margin: 50px -50px 0px 50px; */
+  position: relative;
+  animation-name: move_right;
+  animation-duration: 3s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes move_right {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 125px;
+  }
+}
+
+#nd {
+  color: #ed5752;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 500px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+#nd1 {
+  color: grey;
+  line-height: 1.5;
+  letter-spacing: 1.25;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+#nd2 {
+  display: block;
+  /* border-bottom: 1px solid #000; */
+  color: lightgray;
+  margin-top: 30px;
+  font-weight: 650px;
+  letter-spacing: 2px;
+  /* text-decoration: none; */
+}
+
+#nd2:hover {
+  color: #ed5752;
+  font-weight: 600px;
+}
+
+#hinhanh {
+  top: 100px;
+  /* left: 50px; */
+  /* margin: 50px 50px 0px -120px; */
+  float: right;
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+#lienhe {
+  width: 100%;
+  height: 450px;
+  padding-top: 50px;
+}
+
+.fo {
+  margin-bottom: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  width: 42%;
+  height: 50px;
+  margin: 10px 0;
+  /* padding: 5px 40px; */
+  /* border-radius: 5px; */
+  border: solid 1px #a1be95;
+  display: inline-block;
+}
+
+#contact {
+  /* background-color: forestgreen; */
+  float: left;
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+.lh {
+  color: #a1be95;
+  font-size: 28px;
+  margin-top: -5px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 3px;
+  /* padding-left: 10px */
+}
+
+#thongtin {
+  float: right;
+  width: 40%;
+  height: 100%;
+  /* background-color: aqua; */
+}
+
+#le {
+  float: left;
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  line-height: 2;
+  padding: 40px 20px;
+}
+
+#thi {
+  float: right;
+  width: 75%;
+  height: 100%;
+  text-align: justify;
+  line-height: 1.5;
+  padding-top: 38px;
+  padding-right: 50px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#footer {
+  background-color: black;
+  width: 100%;
+  height: 560px;
+}
+
+#f1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  color: white;
+}
+
+hr.solid {
+  border: 0.05cm solid pink;
+}
+
+.ch {
+  font-family: halant;
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 1.5;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-top: 65px;
+}
+
+.a {
+  list-style-type: none;
+  margin: 32px 0px;
+  text-align: left;
+  padding-left: -30px;
+  line-height: 3;
+}
+
+.b {
+  padding-right: 8px;
+  padding-left: 43px;
+}
+
+.b::before {
+  content: "•";
+  padding-right: 10px;
+  color: pink;
+
+  /* Or a color you prefer */
+}
+
+.c {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+}
+
+.c:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a1be95;
+  padding: 15px;
+}
+
+#f2 {
+  width: 40%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+#f2 > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#f3 {
+  width: 30%;
+  height: 100%;
+  float: right;
+  color: white;
+}
+
+#fb {
+  padding: 30px 0px;
+  letter-spacing: 10px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: blanchedalmond; */
+}
+
+.su {
+  text-decoration: none;
+}
+
+.su:hover {
+  opacity: 0.7;
+}
+
+#banquyen {
+  width: 100%;
+  height: 40px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: -10px;
+  opacity: 70%;
+}

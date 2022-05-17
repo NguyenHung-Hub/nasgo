@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="inner">
+        <div id="left">
+          <img src="img/login_img.png" alt="img " />
+        </div>
+
+        <!-- right -->
+        <div id="right">
+          <form action="" id="form_Login">
+            <!-- Sign Up -->
+            <h3>Login</h3>
+
+            <!-- Action -->
+            <div class="form_action">
+              <!-- Name -->
+              <input
+                class="input_action"
+                name="name"
+                type="text"
+                id="frm_name"
+                placeholder="NAME"
+                required
+              />
+              <div id="tb_name" class="tb"></div>
+            </div>
+
+            <!-- Password -->
+            <div class="form_action">
+              <input
+                type="password"
+                name="password"
+                class="input_action"
+                id="frm_password"
+                placeholder="PASSWORD"
+              />
+              <div id="tb_pw" class="tb"></div>
+            </div>
+
+            <!-- check box -->
+            <div id="checkbox_Login">
+              <label for="">
+                <input type="checkbox" class="checkbox" id="login_checkbox" />
+                <span>Remember me</span>
+                <!-- <a href="#">Terms & Conditions</a> -->
+              </label>
+            </div>
+
+            <!-- button Login -->
+            <div id="login">
+              <input
+                type="button"
+                class="btnLogin"
+                value="Login"
+                onclick="login()"
+              />
+              <p style="padding: 15px 0">
+                Already Have account?
+                <br />
+                <a
+                  href="./signup.html"
+                  style="
+                    line-height: 20px;
+                    font-size: 13px;
+                    box-sizing: border-box;
+                  "
+                  >Sign Up</a
+                >
+              </p>
+              <a href="../home.html"></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="jg_login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,602 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#full {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+#header {
+  width: 1200px;
+  height: 100px;
+  background-color: rgba(245, 243, 176, 0.655);
+}
+
+#logo {
+  width: 120px;
+  height: 100%;
+  float: left;
+
+  position: relative;
+}
+
+#logo > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu {
+  width: 750px;
+  height: 100%;
+  float: left;
+
+  font-size: 18px;
+  font-weight: 750;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#menu > ul {
+  padding: 35px;
+  text-align: center;
+}
+
+#menu > ul > li {
+  display: inline;
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  padding-right: 40px;
+  color: #824d5c;
+}
+
+#menu > ul > li > a:hover {
+  color: rgb(255, 130, 130);
+}
+#icon {
+  width: calc(1200px - 120px - 750px);
+  height: 100%;
+  float: left;
+}
+
+#search {
+  float: left;
+  padding: 32px 0;
+}
+
+#txtsearch {
+  border-radius: 50px;
+  border: rgb(222, 213, 213) 3px solid;
+  padding-right: 5px;
+  padding: 5px;
+}
+
+#btsearch {
+  padding: 5px;
+  border-radius: 20px;
+  border: rgb(222, 213, 213) 3px solid;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+#cart {
+  float: left;
+  padding: 40px 10px;
+  /* margin: 5px; */
+}
+
+#cart > a > i {
+  color: #824d5c;
+}
+
+#login {
+  float: left;
+  padding: 40px 10px;
+}
+
+#login > a > i {
+  color: #824d5c;
+}
+
+#btshopnow {
+  margin: 20px;
+  position: absolute;
+  top: 361px;
+}
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  padding: 13px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:after {
+  content: ">>>";
+  color: white;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  padding-right: 25px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 0;
+}
+#banner {
+  width: 1200px;
+  height: 370px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  background-image: url(hinhanh/banner.png);
+}
+
+/* WELCOME TO NASGO DECOR */
+#xinchao {
+  width: 1200px;
+  height: 170px;
+  background-image: url(hinhanh/bgrxinchao.png);
+  padding-top: 16px;
+}
+#welcome {
+  text-align: center;
+  font: 1em sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#noidung {
+  width: 1200 px;
+  height: 27px;
+  text-align: justify;
+  font-size: medium;
+  font-style: italic;
+  padding: 39px 156px 47px 198px;
+}
+/* KHẲNG ĐỊNH */
+#khangdinh {
+  width: 1200px;
+  height: 200px;
+}
+#table1 {
+  width: 1200px;
+  height: 200px;
+  border-spacing: 5px;
+}
+
+.row1 {
+  width: 100%;
+  height: 200px;
+}
+.column1 {
+  width: 25%;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #fffbe6;
+  border-radius: 10px;
+}
+.column1:hover {
+  background-color: #92aac7;
+}
+
+.column1 > p {
+  margin-top: 10px;
+}
+.space {
+  width: 1200px;
+  height: 30px;
+}
+/* LINK font chữ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* HÀNG MỚI VỀ + SẢN PHẨM BÁN CHẠY */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #111;
+}
+#fullnewproduct {
+  max-width: 1200 px;
+  margin: auto;
+}
+#fullbestseller {
+  max-width: 1200 px;
+  margin: auto;
+}
+/* TIÊU ĐỀ */
+.headline {
+  text-align: center;
+  margin: 25px 0px;
+}
+h3 {
+  font-size: 24px;
+  color: #bebebe;
+  /* padding: 10px 20px; */
+  text-transform: uppercase;
+  /* border:1px solid #bebebe; */
+  display: inline-block;
+  color: rgba(10, 9, 9, 0.662);
+  font-weight: 600;
+}
+hr.rounded {
+  height: 3px;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+  display: block;
+  background-color: #1a281a59;
+}
+/* SẢN PHẨM */
+.products {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #92aac7;
+}
+.products > li {
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+/* HÌNH ẢNH + MUA NGAY<BUY NOW>  */
+.product-top {
+  position: relative;
+  overflow: hidden;
+}
+.buy-now {
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: #ff443a;
+  color: white;
+  padding: 15px 0px;
+  position: absolute;
+  transition: 0.25s ease-in-out;
+  opacity: 0.85;
+}
+.image-product > img {
+  height: 300px;
+  display: block;
+}
+li:hover .buy-now {
+  bottom: 0px;
+}
+li:hover img {
+  filter: opacity(70%);
+}
+li > img {
+  width: 100%;
+}
+/* THÔNG TIN SẢN PHẨM */
+.product-item {
+  width: 100%;
+}
+.product-info {
+  padding: 10px 0px;
+  line-height: 1.5;
+  text-align: center;
+}
+.product-info > a {
+  text-decoration: none;
+}
+.product-danhmuc {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #545454;
+}
+.product-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  padding: 3px 0px;
+  text-decoration: none;
+}
+.product-price {
+  font-size: 16px;
+  color: black;
+  padding: 2px 0px;
+  font-weight: 700;
+}
+
+/* BÀI VIẾT MỚI */
+#fullnewblog {
+  width: 1200px;
+  height: 500px;
+}
+#blog {
+  height: 370px;
+  width: 1200px;
+}
+.blog-card {
+  align-items: center;
+  position: absolute;
+  height: 365px;
+  width: 95%;
+  max-width: 850px;
+  margin: auto;
+  border-radius: 25px;
+  /* background: white; */
+  /* box-shadow: 0px 10px 50px rgba(252,56,56,.3); */
+}
+.inner-part {
+  position: absolute;
+  display: flex;
+  height: 360px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+#imgTap:checked ~ .inner-part {
+  padding: 0;
+  transition: 0.1s ease-in;
+}
+.inner-part .img {
+  height: 260px;
+  width: 260px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 2px 3px 15px rgba(252, 56, 56, 0.1);
+}
+#imgTap:checked ~ .inner-part .img {
+  height: 370px;
+  width: 850px;
+  z-index: 99;
+  margin-top: 10px;
+  transition: 0.3s 0.2s ease-in;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.6s;
+}
+#tap-1:checked ~ .inner-part .img-1,
+#tap-2:checked ~ .inner-part .img-2,
+#tap-3:checked ~ .inner-part .img-3 {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.content {
+  padding: 0 20px 0 35px;
+  width: 839px;
+  margin-left: 50px;
+  opacity: 0;
+  transition: 0.6s;
+  font-family: "Fira Sans", sans-serif;
+}
+#imgTap:checked ~ .inner-part .content {
+  display: none;
+}
+#tap-1:checked ~ .inner-part .content-1,
+#tap-2:checked ~ .inner-part .content-2,
+#tap-3:checked ~ .inner-part .content-3 {
+  opacity: 1;
+  margin-left: 0px;
+  z-index: 100;
+  transition-delay: 0.3s;
+}
+.content span {
+  display: block;
+  color: #7b7992;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* font-family:'Fira Sans', sans-serif;} */
+.content .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d0925;
+  margin-bottom: 20px;
+}
+.content .text {
+  color: #4e4a67;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+.content button {
+  display: inline-flex;
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff0e6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #fd3535;
+  background: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+}
+.content button:hover {
+  background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
+}
+.sliders {
+  position: absolute;
+  bottom: 25px;
+  left: 65%;
+  transform: translateX(-50%);
+  z-index: 12;
+  margin-left: 50px;
+}
+#imgTap:checked ~ .sliders {
+  display: none;
+}
+.sliders .tap {
+  position: relative;
+  height: 10px;
+  width: 50px;
+  background: #d9d9d9;
+  border-radius: 5px;
+  display: inline-flex;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.sliders .tap:hover {
+  background: #cccccc;
+}
+.sliders .tap:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: -100%;
+  background: linear-gradient(147deg, #f6b323 0%, #f23b26 74%);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: transform 0.6s;
+  transform-origin: left;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+#tap-1:checked ~ .sliders .tap-1:before,
+#tap-2:checked ~ .sliders .tap-2:before,
+#tap-3:checked ~ .sliders .tap-3:before {
+  transform: scaleX(1);
+  width: 100%;
+}
+/* FOOTTER */
+#footer {
+  background-color: black;
+  width: 1200px;
+  height: 590px;
+  margin: auto;
+}
+
+#f1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  color: white;
+}
+
+.ch {
+  font-family: halant;
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 1.5;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-top: 50px;
+}
+
+.a {
+  list-style-type: none;
+  margin: 15px 0px;
+  text-align: left;
+  padding-left: -30px;
+  line-height: 2;
+}
+
+.b {
+  padding: 5px 8px 5px 43px;
+}
+
+.b::before {
+  content: "•";
+  padding-right: 10px;
+  color: pink;
+
+  /* Or a color you prefer */
+}
+
+.c {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+}
+
+.c:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a1be95;
+  padding: 15px;
+}
+
+#f2 {
+  width: 40%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+#f2 > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#f3 {
+  width: 30%;
+  height: 100%;
+  float: right;
+  color: white;
+}
+
+#fb {
+  padding: 10px 25px;
+  letter-spacing: 10px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: blanchedalmond; */
+}
+
+.su {
+  text-decoration: none;
+}
+
+.su:hover {
+  opacity: 0.7;
+}
+
+#banquyen {
+  width: 100%;
+  height: 40px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: -10px;
+  opacity: 70%;
+}

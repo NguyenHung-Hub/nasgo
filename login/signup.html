@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="inner">
+        <div id="left">
+          <img src="img/login_img.png" alt="img " />
+        </div>
+
+        <!-- right -->
+        <div id="right">
+          <form action="" id="form_Signup">
+            <!-- Sign Up -->
+            <h3>Sign Up</h3>
+
+            <!-- Action -->
+            <div class="form_action">
+              <!-- Name -->
+              <input
+                class="input_action"
+                name="name"
+                type="text"
+                id="frm_name"
+                placeholder="NAME"
+              />
+              <div id="tb_name" class="tb"></div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form_action">
+              <input
+                type="text"
+                name="email"
+                class="input_action"
+                id="frm_email"
+                placeholder="E-MAIL"
+              />
+              <div id="tb_email" class="tb"></div>
+            </div>
+
+            <!-- phone -->
+            <div class="form_action">
+              <input
+                type="text"
+                name="phone"
+                class="input_action"
+                id="frm_phone"
+                placeholder="PHONE"
+              />
+              <div id="tb_phone" class="tb"></div>
+            </div>
+
+            <!-- Password -->
+            <div class="form_action">
+              <input
+                type="password"
+                name="password"
+                class="input_action"
+                id="frm_password"
+                placeholder="PASSWORD"
+              />
+              <div id="tb_pw" class="tb"></div>
+            </div>
+
+            <!-- Confirm pw -->
+            <div class="form_action">
+              <input
+                type="password"
+                name="cf_password"
+                class="input_action"
+                id="frm_cfpw"
+                placeholder="CONFIRM PASSWORD"
+              />
+              <div id="tb_cfpw" class="tb"></div>
+            </div>
+
+            <!-- check box -->
+            <div id="checkbox_Signup">
+              <label for="">
+                <input type="checkbox" class="checkbox" id="sign_up_checkbox" />
+                I agree all statement in
+                <a href="#">Terms & Conditions</a>
+              </label>
+            </div>
+
+            <!-- button sign up -->
+            <div id="sign_up">
+              <input
+                type="button"
+                class="btnsignup"
+                value="Sign Up"
+                onclick="sign_up()"
+              />
+              <p>
+                Already Have account?
+                <a href="./login.html">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js_Signup.js"></script>
+  </body>
+</html>

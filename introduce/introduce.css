@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BẢNG MÀU
+  - VÀNG:#e2e0a3
+  - XANH LÁ: #a0bc8b
+  - ĐỎ: #824d5c <Đỏ bảng thư đưa nó bị đậm quá nên t xuống 1-2 tone
+  - XANH NƯỚC: #68898c
+  - ĐEN: BLACK*/
+#Full {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+#banner {
+  width: 1200px;
+  height: 350px;
+  margin: auto;
+  border: none;
+  /* background-color: rgb(255, 255, 255); */
+  background-image: url(./Gioithieu/Giới\ thiệu.jpg);
+  /* border: 1px solid black; */
+  /* background-color: url(img/logo.png); */
+  /* Bỏ cả cái dòng border đi nhe 
+    Dòng border là để tụi m biết cái banner nó nằm chỗ nào*/
+  /* đổi tên hình vô nhe */
+}
+#Banner > img {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: 1200px;
+  height: 100px;
+  background-color: rgba(245, 243, 176, 0.655);
+  /* Cài này là màu nền của header
+    thích đổi màu thì đổi 3 số đầu nha
+    245, 243, 176
+    số cuối phẩy phẩy là % transper á, độ mờ t đang set là 65,5% */
+}
+
+#logo {
+  width: 120px;
+  height: 100%;
+  float: left;
+
+  position: relative;
+}
+
+#logo > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu {
+  width: 750px;
+  height: 100%;
+  float: left;
+
+  font-size: 18px;
+  font-weight: 750;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#menu > ul {
+  padding: 35px;
+  text-align: center;
+}
+
+#menu > ul > li {
+  display: inline;
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  padding-right: 40px;
+  color: #824d5c;
+}
+
+#menu > ul > li > a:hover {
+  color: rgb(255, 130, 130);
+}
+#icon {
+  width: calc(1200px - 120px - 750px);
+  height: 100%;
+  float: left;
+}
+
+#search {
+  float: left;
+  padding: 32px 0;
+}
+
+#txtsearch {
+  border-radius: 50px;
+  border: rgb(222, 213, 213) 3px solid;
+  padding-right: 5px;
+  padding: 5px;
+}
+
+#btsearch {
+  padding: 5px;
+  border-radius: 20px;
+  border: rgb(222, 213, 213) 3px solid;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+#cart {
+  float: left;
+  padding: 40px 10px;
+  /* margin: 5px; */
+}
+
+#cart > a > i {
+  color: #824d5c;
+}
+
+#login {
+  float: left;
+  padding: 40px 10px;
+}
+
+#login > a > i {
+  color: #824d5c;
+}
+
+#Chaomung {
+  margin: 70px 185px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Gioithieu/Background6.png);
+}
+#Chaomung > h2 {
+  font-size: 29px;
+  font-weight: 550;
+  color: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+}
+hr.rounded {
+  height: 2px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
+  display: block;
+  background-color: darkseagreen;
+}
+#Chaomung > p {
+  color: #111111;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 0;
+  margin-top: 32px;
+  text-align: center;
+}
+
+#Chude1 {
+  width: 1200px;
+  height: 600px;
+  background-image: url(Gioithieu/Background4.png);
+}
+#Left {
+  width: 350px;
+  height: 500px;
+  float: Left;
+}
+
+#Left > p {
+  color: rgb(87, 87, 87);
+  font-size: 21px;
+  font-weight: 300;
+  padding: 30px;
+  text-align: right;
+}
+#Center {
+  width: 500px;
+  height: 500px;
+  float: Left;
+}
+#Center > img {
+  padding: 20px 0px;
+}
+#Right {
+  width: 350px;
+  height: 500px;
+  float: right;
+}
+/* #Right>img {
+    padding: 11px 120px;
+  } */
+#Right > p {
+  color: rgb(87, 87, 87);
+  font-size: 21px;
+  font-weight: 100;
+  padding: 30px;
+  text-align: left;
+}
+
+#Sanpham {
+  width: 1200px;
+  height: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#Sanpham > h2 {
+  font-size: 29px;
+  font-weight: 550;
+  color: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+  margin-top: 65px;
+}
+
+#Chude2 {
+  width: 1200px;
+  height: 550px;
+  background-color: rgb(240, 235, 235);
+}
+#Decor {
+  width: 32%;
+  height: auto;
+  float: Left;
+}
+#Decor > img {
+  width: 95%;
+  height: 100%;
+  padding: 15px 15px;
+}
+#Decor > h4 {
+  font-size: 29px;
+  font-weight: 550;
+  color: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+  padding: 15px 15px;
+
+  text-align: center;
+  background-image: url(Gioithieu/bg5.png);
+}
+h4:hover {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  padding: 10px;
+  background-color: cadetblue;
+}
+#Dungcuvp {
+  width: 32%;
+  height: Auto;
+  float: Left;
+  padding-left: 25px;
+}
+
+#Dungcuvp > img {
+  width: 95%;
+  height: 100%;
+  padding: 15px 15px;
+}
+#Dungcuvp > h4 {
+  font-size: 29px;
+  font-weight: 550;
+  color: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+  text-align: center;
+  padding: 15px 15px;
+  background-image: url(Gioithieu/bg5.png);
+}
+#Hoacu {
+  width: 32%;
+  height: auto;
+  float: Right;
+}
+#Hoacu > img {
+  width: 95%;
+  height: 100%;
+  padding: 15px 15px;
+}
+#Hoacu > h4 {
+  font-size: 29px;
+  font-weight: 550;
+  color: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+  text-align: center;
+  padding: 15px 15px;
+  background-image: url(Gioithieu/bg5.png);
+}
+#Chude3 {
+  width: 1200px;
+  height: 650px;
+  background-color: rgb(250, 245, 245);
+}
+#Hinh1 {
+  width: 400px;
+  height: 650px;
+  background-color: rgb(250, 245, 245);
+  float: Left;
+}
+#Hinh1 > img {
+  width: 100%;
+  height: 95%;
+  padding: 12px 11px;
+}
+#Hinh2 {
+  width: 300px;
+  height: 650px;
+  background-color: rgb(250, 245, 245);
+  float: Left;
+}
+#Hinh2 > img {
+  width: 90%;
+  height: 45%;
+  padding: 13px;
+}
+#Gioithieu {
+  width: 500px;
+  height: 650px;
+  background-color: rgb(250, 245, 245);
+  float: right;
+}
+#Gioithieu > h1 {
+  font-size: 38px;
+  font-weight: 550;
+  color: darkgreen;
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+  text-align: center;
+  margin: 50px 0px;
+  font-family: sans-serif;
+}
+#Gioithieu > hr {
+  height: 2px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+  display: block;
+  background-color: darkseagreen;
+}
+#Gioithieu > h6 {
+  color: #303030;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 32px;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-right: 22px;
+}
+#Gioithieu > p {
+  color: #303030;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 32px;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-right: 25px;
+  padding-left: 10px;
+}
+#Gioithieu > a {
+  background-color: #a1be95;
+}
+
+.button1 {
+  width: 150px;
+  height: 20px;
+  background-color: #a1be95;
+  color: black;
+  border: none;
+  color: black;
+  padding: 26px 0px;
+  padding-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  /* cursor: pointer; */
+  margin: 28px 180px;
+}
+
+.button1:hover {
+  background-color: rgb(94, 151, 38);
+  color: black;
+  border: 5px;
+}
+
+#Doingu {
+  width: 1200px;
+  height: 200px;
+  /* background-color: beige; */
+  background-image: url(Gioithieu/Background7.png);
+}
+#Doingu > h2 {
+  font-size: 30px;
+  font-weight: 550;
+  color: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: Auto;
+  height: 50px;
+  text-align: center;
+  padding: 80px;
+  font-family: "Montserrat", sans-serif;
+}
+#Doingu > p {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 32px;
+  padding: 0;
+  margin-top: 40px;
+  text-align: center;
+}
+#Hinhanhdoingu {
+  width: 1200px;
+  height: 500px;
+}
+#Chude4 {
+  width: 1200px;
+  height: 800px;
+  /* background-color:#303030; */
+}
+table {
+  background-color: rgba(228, 220, 220, 0.499);
+}
+tr {
+  width: 100%;
+  height: 100%;
+}
+td {
+  width: 25%;
+  height: 100%;
+}
+td > img {
+  width: 90%;
+  height: 100%;
+  margin: 20px 22px;
+}
+td > h3 {
+  font-size: 26px;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+  color: rgb(87, 87, 87);
+  font-weight: 700;
+}
+td > p {
+  color: grey;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Footer {
+  width: 1200px;
+  height: 500px;
+  background-color: darksalmon;
+}
+
+/*margin: 20px 15px;*/
+/*margin: 130px 0px;*/
+#footer {
+  background-color: black;
+  width: 100%;
+  height: 590px;
+}
+
+#f1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  color: white;
+}
+
+hr.solid {
+  border: 0.05cm solid pink;
+}
+
+.ch {
+  font-family: halant;
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 1.5;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-top: 50px;
+}
+
+.a {
+  list-style-type: none;
+  margin: 15px 0px;
+  text-align: left;
+  padding-left: -30px;
+  line-height: 2;
+}
+
+.b {
+  padding-right: 8px;
+}
+
+.b::before {
+  content: "•";
+  padding-right: 10px;
+  color: pink;
+
+  /* Or a color you prefer */
+}
+
+.c {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+}
+
+.c:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a1be95;
+  padding: 15px;
+}
+
+#f2 {
+  width: 40%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+#f2 > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#f3 {
+  width: 30%;
+  height: 100%;
+  float: right;
+  color: white;
+}
+
+#fb {
+  padding: 10px 25px;
+  letter-spacing: 10px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: blanchedalmond; */
+}
+
+.su {
+  text-decoration: none;
+}
+
+.su:hover {
+  opacity: 0.7;
+}
+
+#banquyen {
+  width: 100%;
+  height: 40px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: -10px;
+  opacity: 70%;
+}
